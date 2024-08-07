@@ -1,0 +1,90 @@
+/* Resetting default styles and setting base styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    color: #fff;
+    padding: 4%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Header styling */
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.container h1 img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+/* Button styling */
+.container .btn {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin: 20px 0;
+    cursor: pointer;
+    border: none;
+    
+}
+.container .btn img {
+    width: 30px;
+    margin-right: 10px;
+}
+.container .btn:hover {
+    background: linear-gradient(135deg, #0056b3, #0087d8);
+}
+
+/* Notes container styling */
+.notes-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual note styling */
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    min-height: 150px;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    cursor: text;
+}
+.input-box img {
+    width: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.input-box img:hover {
+    transform: scale(1.5);
+}
